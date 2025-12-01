@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venkateswara Auto Spares</title>
+
+<style>
+html, body {
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    color:white;
+    background:linear-gradient(135deg,#000814,#001d3d,#003566);
+    min-height:100vh;
+}
+
+/* LAYOUT */
+section {
+    padding:60px 20px;
+    text-align:center;
+}
+
+/* HERO TITLE */
+h1 {
+    margin-top:10px;
+    font-size:32px;
+    color:#00b4ff;
+}
+
+/* CARDS */
+section.card {
+    background:rgba(0,0,0,0.65);
+    border-radius:16px;
+    margin:40px 20px;
+    padding:40px 20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.6);
+    border:1px solid rgba(0,180,255,0.25);
+}
+
+/* BUTTON */
+.action-button {
+    background:#00b4ff;
+    color:#000;
+    border:none;
+    padding:14px 24px;
+    margin-top:15px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+.action-button:hover {
+    background:#0096d6;
+}
+
+/* WHATSAPP MENU */
+#whatsappDropdown {
+    display:none;
+    margin:15px auto 0;
+    background:rgba(0,0,0,0.9);
+    border-radius:12px;
+    padding:15px;
+    max-width:420px;
+    text-align:left;
+    border:1px solid rgba(0,180,255,0.4);
+}
+#whatsappDropdown a {
+    display:block;
+    color:#00b4ff;
+    text-decoration:none;
+    padding:8px 12px;
+    border-radius:6px;
+    margin:6px 0;
+}
+#whatsappDropdown a:hover {
+    background:rgba(0,180,255,0.2);
+}
+
+/* GALLERY */
+#gallery {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    max-width:900px;
+    margin:0 auto;
+}
+#gallery img {
+    width:100%;
+    border-radius:14px;
+    cursor:pointer;
+    transition:0.3s;
+}
+#gallery img:hover {
+    transform:scale(1.05);
+    box-shadow:0 8px 20px rgba(0,180,255,0.4);
+}
+
+/* MOBILE */
+@media (max-width:600px){
+    section.card { padding:30px 15px; }
+    h1 { font-size:26px; }
+    .action-button { width:80%; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section>
+<h1>Venkateswara Auto Spares</h1>
+<p>Providing genuine spare parts for four-wheelers, commercial vehicles & two-wheelers.</p>
+
+<button class="action-button" onclick="toggleWhatsApp()">🟢 Chat on WhatsApp</button>
+
+<div id="whatsappDropdown">
+<a href="https://wa.me/9840710940" target="_blank">📩 Main Enquiry - 9840710940</a>
+<a href="https://wa.me/7305721336" target="_blank">HYUNDAI & FORD - Mr. MUTHU KUMAR</a>
+<a href="https://wa.me/7305088447" target="_blank">ETIOS / VW / GM / RENAULT - Mr. VENKATASH</a>
+<a href="https://wa.me/7305088448" target="_blank">TWO WHEELER - Mr. PANDIYAN</a>
+<a href="https://wa.me/7305088449" target="_blank">ACCOUNTS & GST BILLING</a>
+<a href="https://wa.me/9840710943" target="_blank">MARUTI SWIFT / RITZ - Mr. RAJESHAKAR</a>
+<a href="https://wa.me/7305088441" target="_blank">ALL OTHER MARUTI - Mr. GOVINDHAN</a>
+<a href="https://wa.me/7305088442" target="_blank">TATA ACE LCV - Mr. SENTHIL KUMARAN</a>
+<a href="https://wa.me/7305088443" target="_blank">EICHER / TATA HCV - Mr. PALANIVEL</a>
+<a href="https://wa.me/7305088445" target="_blank">INNOVA / DOST / TAVERA - Mr. RAMESH</a>
+<a href="https://wa.me/7418170718" target="_blank">FORCE TEMPO TRAVELLER - RAGHU</a>
+<a href="https://wa.me/7305088446" target="_blank">TATA PASSENGER / HONDA - Mr. DHARMA</a>
+<a href="https://wa.me/7305479539" target="_blank">MAHINDRA - Mr. FAHATH</a>
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="card">
+<h2>About Us</h2>
+<p>
+We supply genuine spare parts for cars, commercial vehicles and two-wheelers sourced directly from
+trusted manufacturers for long life and performance.
+</p>
+</section>
+
+<!-- EXPERTISE -->
+<section class="card">
+<h2>Our Expertise</h2>
+<ul style="list-style:none; padding:0;">
+<li>🚗 Engine & transmission parts</li>
+<li>⚡ Electrical & electronic components</li>
+<li>🛠 Suspension & braking systems</li>
+<li>🪑 Interior & exterior accessories</li>
+<li>🧰 Oils, filters, consumables and spares</li>
+</ul>
+</section>
+
+<!-- GALLERY -->
+<section class="card">
+<h2>Our Shop & Awards</h2>
+<div id="gallery">
+    <img src="shop1.avif.avif" alt="Shop">
+    <img src="award1.webp.webp" alt="Award 1">
+    <img src="award2.webp.webp" alt="Award 2">
+</div>
+</section>
+
+<script>
+function toggleWhatsApp() {
+    const box = document.getElementById("whatsappDropdown");
+    box.style.display = box.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
